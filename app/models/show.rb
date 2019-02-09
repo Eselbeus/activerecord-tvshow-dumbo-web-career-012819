@@ -6,7 +6,7 @@ class Show < ActiveRecord::Base
     # end
     # shows_arr.sort[-1]
   end
-  def most_popular_show 
+  def self.most_popular_show 
     Show.all.each do |show|
       if show.rating == highest_rating
         return show
