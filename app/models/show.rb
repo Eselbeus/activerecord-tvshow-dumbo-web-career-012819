@@ -6,11 +6,11 @@ class Show < ActiveRecord::Base
     # end
     # shows_arr.sort[-1]
   end
-  def most_popular_show 
-    Shows.all.each do |show|
-      if show.ratings == highest_rating
-        return show
-      end
-    end
-  end
+  # def most_popular_show 
+  #   Shows.all.each do |show|
+  #     if show.ratings == highest_rating
+  #       return show
+  #     end
+  #   end
+  # end
 end
