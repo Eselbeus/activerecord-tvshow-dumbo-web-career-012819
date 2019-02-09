@@ -1,7 +1,7 @@
 class Show < ActiveRecord::Base 
   def self.highest_rating 
     Show.all.map do |show|
-      show.ratings
+      show.rating
     end.maximum
   end
   # def most_popular_show 
