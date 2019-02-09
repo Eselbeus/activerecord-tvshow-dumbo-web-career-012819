@@ -1,5 +1,5 @@
 class Show < ActiveRecord::Base 
-  def highest_rating 
+  def self.highest_rating 
     Shows.all.map do |show|
       show.ratings
     end.maximum
