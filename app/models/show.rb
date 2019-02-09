@@ -1,6 +1,6 @@
 class Show < ActiveRecord::Base 
   def self.highest_rating 
-    Show.all.rating.maximum
+    Show.maximum(:rating)
     # shows_arr = Show.all.map do |show|
     #   show.rating
     # end
