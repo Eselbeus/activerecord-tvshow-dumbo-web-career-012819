@@ -1,3 +1,5 @@
+require 'pry'
+
 class Show < ActiveRecord::Base 
   def highest_rating 
     Shows.all.ratings.maximum
